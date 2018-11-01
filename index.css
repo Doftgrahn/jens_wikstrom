@@ -1,3 +1,70 @@
+/*
+Färgpalett - Ice and crisp
+Ice: #99D3DF;
+Fresh Water: #88BBD6;
+Plaster: #CDCDCD;
+Linen: #E9E9E9;
+
+
+
+
+FONT:
+font-family: 'Roboto Mono', monospace;
+
+
+*/
 body {
-  margin:0px;
+  margin: 0px;
+  width:100%;
+}
+
+.header {
+  top: 0;
+  position: static;
+  width: 100%;
+  height: 40px;
+  display: block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background-color: #CDCDCD;
+}
+.menu ul{
+  list-style-type: none;
+  display:none;
+}
+
+.intro {
+  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  background-color: #99D3DF;
+  padding:5px;
+}
+
+.flex-container {
+  display: flex;
+  margin:0;
+}
+
+.allflex {
+  flex: 1;
+  border: 1px solid black;
+  height: 500px;
+}
+
+.footer {
+  margin:0;
+  bottom: 0px;
+  background-color: #CDCDCD;
+}
+
+.backtotop {
+  text-align: center;
+}
+
+.containerfooter {
+  text-align: center;
 }

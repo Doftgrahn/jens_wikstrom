@@ -87,9 +87,146 @@ img {
    max-height: 450px;
  }
 }
+/*double parallax */
+
+@import 'lesshat';
+#contaianer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+#wrapper{
+    overflow: hidden;
+    position:absolute;
+    width: 1500px;
+    height: 800px;
+    z-index:10;
+    top: 50%;
+    left: 50%;
+    .transform(translate(-50%, -50%));
+    div{
+        position:absolute;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.p1{
+    width: 1776px;
+    height: 1183px;
+    z-index:6;
+    background-image: url('bearbackgrou.jpg');
+    left: -89px;
+    top: -191px;
+
+}
+.p2{
+    width: 927px;
+    height: 854px;
+    z-index:8;
+    background-image: url('bearfroground.jpg');
+    left:-83px;
+    top: 169px;
+
+}
+/*.p3{
+    width: 1082px;
+    height: 729px;
+    z-index:10;
+    background-image: url('//caraujo_pens.surge.sh/images/QAyjA6B.png');
+    left: 718px;
+    top: 136px;
+    */
+
+}
+.letra{
+    font-weight: 900;
+    color: #24395A;
+    font-size: 280/16em;
+    top: 30%;
+    margin-top: -115px;
+    width: 100%;
+    text-align: center;
+    z-index: 7;
+    text-transform: uppercase;
+}
 
 
----*/
+
+
+end double parallax*/
+
+/*-- Parallax ---*/
+
+/*
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background: red;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+  background-image: url('DSC_1658.jpg');
+}
+
+.bg2::after {
+  background-image: url('DSC_9977.jpg');
+}
+
+
+
+
+/* end parallax */
 .flex-container {
   display: flex;
   /*justify-content: center;*/
